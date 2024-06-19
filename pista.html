@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PISTA DE LA SEMANA</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>PISTA DE LA SEMANA</h1>
+        <div class="question-container">
+            <!-- Imagen del interrogante -->
+            <img src="fotos/interrogante2-Photoroom.png" alt="Interrogante" class="question-image" onclick="showClue()">
+            
+            <!-- El iframe de MyInstants para reproducir el sonido -->
+            <iframe width="0" height="0" src="https://www.myinstants.com/instant/happy-wheels-victory-69803/embed/" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div id="clueModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeClue()">&times;</span>
+            <p id="clueText">Es algo que usas a diario.</p>
+        </div>
+    </div>
+    <audio id="celebrationSound" src="https://www.myinstants.com/media/sounds/happy-wheels-victory.mp3" preload="auto"></audio>
+    <script src="interaccion.js"></script>
+</body>
+</html>
